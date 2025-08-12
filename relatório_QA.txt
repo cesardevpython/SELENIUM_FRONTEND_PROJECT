@@ -1,0 +1,45 @@
+Relatório de Testes Automatizados – Projeto Selenium Frontend
+Data da execução: 12/08/2025
+Ferramentas utilizadas: Selenium WebDriver, pytest, pytest-html
+Objetivo: Validar as funcionalidades principais da interface web do sistema, garantindo a qualidade da experiência do usuário.
+
+Escopo dos Testes
+Os testes automatizados cobriram os seguintes fluxos críticos do sistema:
+
+Cadastro de Usuário
+
+Verificação do cadastro com dados válidos.
+
+Validação de mensagem de erro para e-mail já cadastrado.
+
+Login
+
+Teste de login com credenciais corretas.
+
+Teste de login com credenciais inválidas, validando mensagem de erro.
+
+Resultados da Execução
+Total de testes executados: 5
+
+Testes aprovados: 1
+
+Testes com falhas: 4
+
+Análise dos Resultados
+Durante a execução, verificou-se que:
+
+As mensagens de sucesso e erro não estavam sendo exibidas conforme esperado, causando falha nas asserções dos testes.
+
+Em um dos casos, houve um erro do tipo StaleElementReferenceException, indicando que o elemento da página foi atualizado ou removido antes do acesso.
+
+Problemas relacionados a tempos de espera e sincronização entre o Selenium e a aplicação foram identificados.
+
+Recomendações
+Ajustar a aplicação para garantir que mensagens de feedback sejam exibidas corretamente após ações do usuário.
+
+Implementar melhores estratégias de espera explícita (WebDriverWait) para evitar erros de referência a elementos obsoletos.
+
+Realizar testes manuais adicionais para investigar comportamento da interface.
+
+Reexecutar testes após ajustes para validar correção dos problemas.
+
