@@ -64,27 +64,21 @@ Este projeto tem como objetivo automatizar testes das principais funcionalidades
 
 ### 1. Ative o ambiente virtual
 
-```bash
+bash
 venv\Scripts\activate    # Windows
 source venv/bin/activate # Linux/Mac
 
 
 2. Instale as dependências
 bash
-Copiar
-Editar
 pip install -r requirements.txt
 3. Inicie a aplicação web (se necessário)
 bash
-Copiar
-Editar
 python app.py
 Certifique-se que o servidor está rodando em http://127.0.0.1:5000.
 
 4. Execute os testes com relatório
 bash
-Copiar
-Editar
 pytest tests/ --html=reports/report.html --self-contained-html
 5. Visualize o relatório
 Abra o arquivo reports/report.html no navegador para ver os resultados detalhados dos testes.
